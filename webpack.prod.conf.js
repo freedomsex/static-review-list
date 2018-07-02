@@ -8,7 +8,6 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 
 const webpackConfig = merge(baseWebpackConfig, {
   output: {
-    path: path.resolve(__dirname, '../dist'),
     publicPath: '/dist/',
     library: 'static-review-list',
     filename: "index.js",
@@ -21,11 +20,9 @@ const webpackConfig = merge(baseWebpackConfig, {
     new MiniCssExtractPlugin({
       filename: "style.css",
     }),
-    new CleanWebpackPlugin([path.resolve(__dirname, 'dist')]),
-
     new BundleAnalyzerPlugin({
-      // openAnalyzer: false,
-      // analyzerMode: 'disabled',
+      openAnalyzer: false,
+      analyzerMode: 'disabled',
     }),
   ],
 
