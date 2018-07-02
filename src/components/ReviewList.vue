@@ -53,7 +53,9 @@ export default {
 <template>
   <div>
     <div class="static-reviews" v-if="reviews.length">
-      <div class="static-reviews__caption">Отзывы</div>
+      <div class="static-reviews__caption">
+        <h2>Отзывы</h2>
+      </div>
       <div class="static-reviews__item"
        v-for="(item, index) in list"
        :class="item.sex"
@@ -78,11 +80,9 @@ export default {
   margin: 20px 0 20px;
 
   &__caption {
-    font-size: 24px;
-    font-weight: bold;
     margin-bottom: 15px;
     padding: 10px 0px;
-    border-bottom: 1px solid #666;
+    border-bottom: 1px solid #eee;
   }
 
   &__item {
