@@ -14,7 +14,8 @@ if (process.env.NODE_ENV === 'production') {
 
 module.exports = {
   entry: {
-    app: ['./src/index.js'],
+    // app: ['./src/index.js'],
+    app: ['./src/components/ReviewList.vue'],
   },
   resolve: {
     extensions: ['.js', '.json', '.vue', '.ts'],
