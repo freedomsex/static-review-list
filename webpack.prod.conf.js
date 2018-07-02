@@ -11,7 +11,8 @@ const webpackConfig = merge(baseWebpackConfig, {
     publicPath: '/dist/',
     library: 'StaticReviewList',
     filename: "index.js",
-    libraryTarget: "umd",
+    // libraryTarget: "umd",
+    libraryTarget: 'window',
   },
   externals: {
     Vue: 'Vue',

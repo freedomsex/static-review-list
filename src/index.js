@@ -1,3 +1,3 @@
 import ReviewList from './components/ReviewList';
 
-export default { ReviewList };
+export default ReviewList;
