@@ -9,7 +9,7 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 const webpackConfig = merge(baseWebpackConfig, {
   output: {
     publicPath: '/dist/',
-    library: 'static-review-list',
+    library: 'StaticReviewList',
     filename: "index.js",
     libraryTarget: "umd",
   },
