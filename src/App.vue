@@ -1,5 +1,5 @@
 <script>
-import ReviewList from './components/ReviewList';
+// import ReviewList from './components/ReviewList';
 
 export default {
   data() {
@@ -28,16 +28,17 @@ export default {
       ],
     };
   },
-  components: {
-    ReviewList,
-  },
+  // components: {
+  //   ReviewList,
+  // },
 };
 </script>
 
 <template>
   <div id="app">
       <h1>Preview ReviewList</h1>
-      <ReviewList link="https://raw.githubusercontent.com/freedomsex/docs/master/blog/rev/how-it-works.json" :raw="list"/>
+      <!-- <ReviewList link="https://raw.githubusercontent.com/freedomsex/docs/master/blog/rev/how-it-works.json" :raw="list"/> -->
+      <static-review-list link="https://raw.githubusercontent.com/freedomsex/docs/master/blog/rev/how-it-works.json" :raw="list"></static-review-list>
   </div>
 </template>
 

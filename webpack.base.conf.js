@@ -14,13 +14,13 @@ if (process.env.NODE_ENV === 'production') {
 
 module.exports = {
   entry: {
-    // app: ['./src/index.js'],
-    app: ['./src/components/ReviewList.vue'],
+    app: ['./src/index.js'],
+    // app: ['./src/components/ReviewList.vue'],
   },
   resolve: {
     extensions: ['.js', '.json', '.vue', '.ts'],
     alias: {
-      // vue$: 'vue/dist/vue.esm.js',
+      vue$: 'vue/dist/vue.esm.js',
       '~components': path.resolve(__dirname, './src/components/'),
     },
   },
