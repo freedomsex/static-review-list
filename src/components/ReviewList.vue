@@ -1,6 +1,8 @@
 <script>
 import MoreButton from '~components/MoreButton';
 
+console.log('plugin loaded');
+
 export default {
   props: ['link', 'raw'],
   data: () => ({
@@ -16,6 +18,7 @@ export default {
     },
   },
   mounted() {
+    console.log('plugin mounted');
     if (this.link) {
       this.load();
     } else
